@@ -139,7 +139,7 @@ The pipeline run was monitored from within the notebook with the  RunDetails [Ju
 
 The piepline run was also visible on the _**Pipelines**_ console in the `AML Studio`:
 
-<img width="1248" alt="Screenshot 2023-07-03 at 5 48 05 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/3e75f5b8-6095-4c59-aa68-1bf8f57cc8a0">
+<img width="1224" alt="image" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/b73ae960-ce43-409d-b083-c0f31f064e24">
 
 **5. Pipeline Run Completion**
 
