@@ -152,8 +152,6 @@ The was also displayed inside the notebook like so:
 
 <img width="1074" alt="Screenshot 2023-07-03 at 6 04 07 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/38025006-8cc2-482d-9453-680f9c9715f3">
 
-On the _**Experiments**_ console in the `AML Studio`, the associated experiment `ml-experiment-1` had a Completed status with a green checkmark next to it, as shown here:
-
 <img width="1203" alt="Screenshot 2023-07-03 at 6 03 21 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/c478116b-d220-4982-9518-91cff3b602d4">
 
 
@@ -179,11 +177,9 @@ This was done by clicking the _**Deploy**_ button from the best model _**Details
 
 <img width="606" alt="image" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/5379f7f0-901f-4a45-9006-77f5956933b5">
 
-The deployment was submitted successfully:
+The deployment was submitted successfully. When the deployment was done, an endpoint was generated along with a Swagger URI. This was visible from the _**Endpoints**_ console in the `AML Studio`.
 
 <img width="606" alt="Screenshot 2023-07-03 at 6 18 18 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/d162bfa2-4618-4127-b842-eb816f5c9e49">
-
-When the deployment was done, an endpoint was generated along with a Swagger URI. This was visible from the _**Endpoints**_ console in the `AML Studio`.
 
 <img width="935" alt="Screenshot 2023-07-04 at 1 30 35 AM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/ccc3ea29-519d-4f5a-b87d-c6845ad859d7">
 
@@ -315,7 +311,7 @@ The experiment was visible on the _**Experiment**_ console in the `AML Studio`:
 
 <img width="1213" alt="Screenshot 2023-07-03 at 11 55 28 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/8c695565-4b70-4751-a4a9-b74c132c70bd">
 
-Clicked on the Experiment `pipeline-rest-endpoint` link from the _**Experiments**_ console, a run `Run 1` was shown as running:
+Clicked on the Experiment `pipeline-rest-endpoint` link from the _**Experiments**_ console:
 
 <img width="864" alt="Screenshot 2023-07-03 at 11 53 17 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/3767a0bc-61d3-45cf-bb12-1d27811bd8b8">
 
