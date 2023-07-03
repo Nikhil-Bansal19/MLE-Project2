@@ -1,4 +1,4 @@
-# Operationalizing Machine Learning
+<img width="935" alt="Screenshot 2023-07-04 at 1 30 35 AM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/1e3382cd-bcea-4b05-b323-f7e9d1d16811"># Operationalizing Machine Learning
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
@@ -183,9 +183,9 @@ The deployment was submitted successfully:
 
 <img width="606" alt="Screenshot 2023-07-03 at 6 18 18 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/d162bfa2-4618-4127-b842-eb816f5c9e49">
 
-When the deployment was done, an endpoint was generated along with a Swagger URI. This was visible from the _**Endpoints**_ console in the `AML Studio`. Notice that `Application Insights` was not yet enabled at that point.
+When the deployment was done, an endpoint was generated along with a Swagger URI. This was visible from the _**Endpoints**_ console in the `AML Studio`.
 
-![Uploading Screenshot 2023-07-03 at 6.32.15 PM.png…]()
+<img width="935" alt="Screenshot 2023-07-04 at 1 30 35 AM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/ccc3ea29-519d-4f5a-b87d-c6845ad859d7">
 
 **2. Enable Logging**
 
@@ -214,25 +214,15 @@ for line in logs.split('\n'):
 
 For this script to execute successfully, the AML workspace configuration file `config.json` was downloaded and placed in the same folder as this script. The configuration file looks like this:
 
-```
-{
-    "subscription_id": "7a5e5192-86c5-4374-9780-5ddf26e7d9e1",
-    "resource_group": "aml-quickstarts-124895",
-    "workspace_name": "quick-starts-ws-124895"
-}
-```
+<img width="501" alt="image" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/4e74be5f-c7a0-45db-9c3b-297ca2aee59e">
+
 
 The screenshot below shows successful execution of the `logs.py` script with `Application Insights` enabled and logs retrieved:
 
-![LogEnable](assets/logenable.png)
+<img width="1183" alt="image" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/b0b9e2b5-10f0-4443-a9c6-1fbe1caffb19">
 
 On the _**Endpoints**_ console in the AML Studio, the _**Details**_ tab of the best model page showed `Application Insights` was enabled successful with an url provided:
 
-![LogEnabled](assets/logenabled.png)
-
-The _**Deployment**_ tab on the same page displayed logs received:
-
-![LogEnabled2](assets/logenabled2.png)
 
 **3. Swagger Documentation**
 
@@ -240,110 +230,41 @@ Azure provides a [Swagger JSON file](https://swagger.io/) for deployed models. T
 
 This screenshot shows `swagger.json` was downloaded successfully from the Swagger URI and saved to the Swagger script folder:
 
-![SwaggerDnld](assets/swagerJsonDnld.png)
+<img width="917" alt="Screenshot 2023-07-03 at 6 45 02 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/9b949446-b476-433e-b70a-6c2ea380c271">
 
 Next `swagger.sh` and `serve.py` were started on the local host
 to stage a swagger instance with the documentation for HTTP API of the deployed model on the local host, as shown here:
 
-![Swagger](assets/swagger.png)
+<img width="1246" alt="Screenshot 2023-07-03 at 7 22 34 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/6f62b841-6f33-4fe1-b710-6f1cbbcea8a1">
 
 The `POST/score` method of the HTTP API looks like this:
 
-![SwaggerPOST](assets/swaggerpost.png)
+<img width="1378" alt="Screenshot 2023-07-03 at 11 20 29 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/94099a32-10b9-45b5-aa7e-b83737a14d9f">
+<img width="1418" alt="Screenshot 2023-07-03 at 11 20 48 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/7dda3910-a2bd-4c13-b1b3-ce8ba71e8d76">
+
 
 **4. Consume Model Endpoint**
 
 Next up, the best model endpoint was put to test by executing a python script `endpoint.py` in the `az cli` interface. The script contains the model endpoint and authorization key (listed on the model's _**Consume**_ tab on the _**Endpoints**_ console in the `AML Studio`), posted a payload to the endpoint and displayed the response for the `POST` request. It also saved the payload to a json file `data.json` which was used subsequently to conduct a benchmarking test on the endpoint. The is the endpoint testing script:
 
-```python
-import requests
-import json
+<img width="790" alt="Screenshot 2023-07-03 at 11 39 16 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/fcfdecc2-addd-4de8-8e01-0847dc218e73">
 
-# URL for the web service, should be similar to:
-# 'http://8530a665-66f3-49c8-a953-b82a2d312917.eastus.azurecontainer.io/score'
-scoring_uri = 'http://d8131649-149d-4a94-88d1-000024f32a51.southcentralus.azurecontainer.io/score'
-# If the service is authenticated, set the key or token
-key = 'gJaAltgcXjbyTpEDNsFd5Q1QFMXQMaQF'
-
-# Two sets of data to score, so we get two results back
-data = {"data":
-        [
-          {
-            "age": 17,
-            "campaign": 1,
-            "cons.conf.idx": -46.2,
-            "cons.price.idx": 92.893,
-            "contact": "cellular",
-            "day_of_week": "mon",
-            "default": "no",
-            "duration": 971,
-            "education": "university.degree",
-            "emp.var.rate": -1.8,
-            "euribor3m": 1.299,
-            "housing": "yes",
-            "job": "blue-collar",
-            "loan": "yes",
-            "marital": "married",
-            "month": "may",
-            "nr.employed": 5099.1,
-            "pdays": 999,
-            "poutcome": "failure",
-            "previous": 1
-          },
-          {
-            "age": 87,
-            "campaign": 1,
-            "cons.conf.idx": -46.2,
-            "cons.price.idx": 92.893,
-            "contact": "cellular",
-            "day_of_week": "mon",
-            "default": "no",
-            "duration": 471,
-            "education": "university.degree",
-            "emp.var.rate": -1.8,
-            "euribor3m": 1.299,
-            "housing": "yes",
-            "job": "blue-collar",
-            "loan": "yes",
-            "marital": "married",
-            "month": "may",
-            "nr.employed": 5099.1,
-            "pdays": 999,
-            "poutcome": "failure",
-            "previous": 1
-          },
-      ]
-    }
-# Convert to JSON string
-input_data = json.dumps(data)
-with open("data.json", "w") as _f:
-    _f.write(input_data)
-
-# Set the content type
-headers = {'Content-Type': 'application/json'}
-# If authentication is enabled, set the authorization header
-headers['Authorization'] = f'Bearer {key}'
-
-# Make the request and display the response
-resp = requests.post(scoring_uri, input_data, headers=headers)
-print(resp.json())
-```
 
 This screenshot shows the response from the `POST` request to the endpoint and the payload used for testing the endpoint was saved to the `data.json` file:
 
-![EndpointTst](assets/endpointtst.png)
+<img width="928" alt="Screenshot 2023-07-03 at 11 38 57 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/112fbf1c-1469-44dc-9b41-2d8872e01fd4">
 
 After the endpoint test, a benchmarking test on the endpoint was conducted using the [Apache Benchmarking tool](https://httpd.apache.org/docs/2.4/programs/ab.html). The `benchmark.sh` contains the endpoint and authorization key as shown here:
 
-```
-ab -n 10 -v 4 -p data.json -T 'application/json' -H 'Authorization: Bearer gJaAltgcXjbyTpEDNsFd5Q1QFMXQMaQF' http://d8131649-149d-4a94-88d1-000024f32a51.southcentralus.azurecontainer.io/score
-```
+
+![image](https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/9bb2cfad-f733-41b2-b6c8-446270de9dc7)
+
 
 It sent the `data.json` file (from the endpoint test) to the endpoint 10 times and produced the run statistics as below:
 
-![Benchmark](assets/banchmark.png)
+<img width="795" alt="Screenshot 2023-07-03 at 11 49 00 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/aabc9719-0d88-4ef2-a144-3e4c0c2def44">
 
-The key takeaway from the benchmarking test is that there was no failed request among the 10 requests sent. The response time per request was `535.09` milliseconds which is well under the default timeout threshold of `60` seconds. Bear in mind the test was conducted in isolation from any interference, the response time measured in the real world environment may well be slower than this.
+The key takeaway from the benchmarking test is that there was no failed request among the 10 requests sent. The response time per request was `120` milliseconds which is well under the default timeout threshold of `60` seconds. Bear in mind the test was conducted in isolation from any interference, the response time measured in the real world environment may well be slower than this.
 
 **5. Conclusion**
 
@@ -364,13 +285,17 @@ published_pipeline = pipeline_run.publish_pipeline(
 published_pipeline
 ```
 
+
+<img width="858" alt="Screenshot 2023-07-03 at 11 52 31 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/ff042bca-c95c-414c-8bcc-e237f8fc446e">
+
+
 The published pipeline object named `Bankmarketing Train` came with an endpoint and showed up on the _**Pipelines**_ console with an active status in the `AML Studio`, as shown here:
 
-![PipelinePub](assets/pipelinePub.png)
+<img width="1230" alt="Screenshot 2023-07-03 at 11 56 57 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/efd4ba12-003a-4cd4-9602-9f87c5f64b3b">
 
 The pipeline endpoint was viewable from the _**Pipelines**_ console by clicking the published pipeline name `Bankmarketing Train` to get to the _**Details**_ tab, like so:
 
-![PipelineEP](assets/pipelineendptdtl.png)
+<img width="1217" alt="Screenshot 2023-07-03 at 11 57 15 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/7a66a44d-05b3-46e2-b888-8c5b1f45bb00">
 
 **2. Post a request to the endpoint to start a run**
 
@@ -388,21 +313,14 @@ response = requests.post(rest_endpoint,
 
 The experiment was visible on the _**Experiment**_ console in the `AML Studio`:
 
-![PipelineExp](assets/pipelineexp.png)
+<img width="1213" alt="Screenshot 2023-07-03 at 11 55 28 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/8c695565-4b70-4751-a4a9-b74c132c70bd">
 
 Clicked on the Experiment `pipeline-rest-endpoint` link from the _**Experiments**_ console, a run `Run 1` was shown as running:
 
-![PipelineExpDtl](assets/pipelineexpdtl.png)
+<img width="864" alt="Screenshot 2023-07-03 at 11 53 17 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/3767a0bc-61d3-45cf-bb12-1d27811bd8b8">
 
-Clicked on `Run 1` link from the _**Experiments**_ console to see the Pipeline run overview on the _**Graph**_ tab. It had an active status and a `HTTP` Run type, proving the run was triggered by the `POST` request to the published pipeline endpoint.
+<img width="815" alt="Screenshot 2023-07-03 at 11 53 40 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/137ecba3-1f95-46f5-9dfa-4cc47785b117">
 
-![PipelineExpDtlRun](assets/pipelinepexpdtlrun.png)
-
-**3. Monitor the Pipeline run with Jupyter widget**
-
-The Pipeline run was monitored from within the notebook with the RunDetails [Jupyter widget](http://jupyter.org/widgets). It was shown as running:
-
-![PipelineEPRun](assets/pipelineeprun.png)
 
 **4. Conclusion**
 
