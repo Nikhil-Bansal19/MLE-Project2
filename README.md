@@ -1,4 +1,4 @@
-<img width="1111" alt="Screenshot 2023-07-03 at 5 52 20 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/49f1afd3-af23-445d-b161-1e8506da41a8"># Operationalizing Machine Learning
+# Operationalizing Machine Learning
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
@@ -133,10 +133,9 @@ pipeline_run = experiment.submit(pipeline)
 
 The pipeline run was monitored from within the notebook with the  RunDetails [Jupyter widget](http://jupyter.org/widgets) as shown here:
 
-![Uploading Screenshot 2023-07-03 at 5.49.06 PM.png…]()
-<img width="1168" alt="Screenshot 2023-07-03 at 5 49 49 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/48c7c4c8-6333-43d0-ad7c-f4f1951b2591">
+<img width="1098" alt="Screenshot 2023-07-03 at 5 49 06 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/b5ff6cf3-5d5f-4f3e-b951-92b909fe1928">
+<img width="1111" alt="Screenshot 2023-07-03 at 5 52 20 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/c9f33d91-787e-448f-9dfc-76164e6ef7d2">
 
-<img width="1111" alt="Screenshot 2023-07-03 at 5 52 20 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/ca05ce92-9bca-4fc4-be13-2a326c11eea8">
 
 The piepline run was also visible on the _**Pipelines**_ console in the `AML Studio`:
 
@@ -144,32 +143,28 @@ The piepline run was also visible on the _**Pipelines**_ console in the `AML Stu
 
 **5. Pipeline Run Completion**
 
+Waiting for pipeline completion:
+<img width="1168" alt="Screenshot 2023-07-03 at 5 49 49 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/48c7c4c8-6333-43d0-ad7c-f4f1951b2591">
+
 The pipeline run successfully completed as shown in the series of screenshots presented here.
 
 The was also displayed inside the notebook like so:
 
-<img width="1074" alt="Screenshot 2023-07-03 at 6 04 07 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/c46a7fc3-9a6e-42ab-bc9c-9dba92fe5ca6">
+<img width="1074" alt="Screenshot 2023-07-03 at 6 04 07 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/38025006-8cc2-482d-9453-680f9c9715f3">
 
 On the _**Experiments**_ console in the `AML Studio`, the associated experiment `ml-experiment-1` had a Completed status with a green checkmark next to it, as shown here:
 
-<img width="1203" alt="Screenshot 2023-07-03 at 6 03 21 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/51ba0aa1-97d1-4b19-a70e-203d51df0601">
+<img width="1203" alt="Screenshot 2023-07-03 at 6 03 21 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/c478116b-d220-4982-9518-91cff3b602d4">
 
-Clicked on the `Run 1` link to drill down to the run Graph and Pipeline run overview:
 
-![ExpDtlDone](assets/exprundtldone.png)
 
 The run produced a list of top performing models in descending order of _**AUC weighted accuracy**_. The best model topping the list is the one named `VotingEnsemble`:
+<img width="1194" alt="Screenshot 2023-07-03 at 6 24 29 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/596966f4-654b-4823-9d08-eb5a953a35d9">
 
-![BestModelList](assets/bestmodellist.png)
 
 Clicking the `VotingEnsemble` hyperlink revealed details of the best model:
 
-![BestModeldtl](assets/bestmodeldtl1.png)
-
-The best model details was also viewable by drilling down to `Run 1` of the `ml-experiment-1` experiment from the _**Experiments**_ console in the `AML Studio`:
-
-![Uploading Screenshot 2023-07-03 at 6.06.29 PM.png…]()
-![Uploading Screenshot 2023-07-03 at 6.07.06 PM.png…]()
+<img width="606" alt="Screenshot 2023-07-03 at 6 18 18 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/da72514a-a2c9-4120-a886-4d735059001f">
 
 **6. Conclusion**
 
