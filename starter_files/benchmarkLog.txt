@@ -1,0 +1,209 @@
+azureuser@comput-instance:~/cloudfiles/code/Users/odl_user_238152/nd00333_AZMLND_C2-master/starter_files$ bash benchmark.sh 
+bash: /anaconda/envs/azureml_py38/lib/libtinfo.so.6: no version information available (required by bash)
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking acd3cbf4-6b46-498a-9f29-8f9a2aac79fb.westeurope.azurecontainer.io (be patient)...INFO: POST header == 
+---
+POST /score HTTP/1.0
+Content-length: 867
+Content-type: application/json
+Authorization: Bearer a1bdoAj1FOlucVH9aWJhoroZOQOkJ418
+Host: acd3cbf4-6b46-498a-9f29-8f9a2aac79fb.westeurope.azurecontainer.io
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:34 GMT
+Server: nginx
+X-Ms-Client-Request-Id: 3651d1a2-96b2-46e9-b863-925de6f1b10c
+X-Ms-Request-Id: 3651d1a2-96b2-46e9-b863-925de6f1b10c
+X-Ms-Run-Fn-Exec-Ms: 96.957
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: e643bcc8-4ad4-4671-8b8f-6b7faf2f3c85
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:34 GMT
+Server: nginx
+X-Ms-Client-Request-Id: 88b49153-c23f-4a87-bdf3-c0ab32e11ae3
+X-Ms-Request-Id: 88b49153-c23f-4a87-bdf3-c0ab32e11ae3
+X-Ms-Run-Fn-Exec-Ms: 73.469
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: b428a7f2-6cf8-48f8-8a98-07abbfac1cb3
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:34 GMT
+Server: nginx
+X-Ms-Client-Request-Id: 8fae6e24-aa34-463d-b341-53f63f141cb7
+X-Ms-Request-Id: 8fae6e24-aa34-463d-b341-53f63f141cb7
+X-Ms-Run-Fn-Exec-Ms: 69.322
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: ef67bd3e-0d3c-4b28-bf97-b6405e50cc19
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:34 GMT
+Server: nginx
+X-Ms-Client-Request-Id: bcd0525a-531c-4db8-92f6-373095a49a44
+X-Ms-Request-Id: bcd0525a-531c-4db8-92f6-373095a49a44
+X-Ms-Run-Fn-Exec-Ms: 94.233
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: aa8bc4b0-7b6f-4bbb-8467-d5c2d40cccb3
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:34 GMT
+Server: nginx
+X-Ms-Client-Request-Id: 33c4ac40-a291-4b0e-af7d-ea78262a8d5f
+X-Ms-Request-Id: 33c4ac40-a291-4b0e-af7d-ea78262a8d5f
+X-Ms-Run-Fn-Exec-Ms: 97.960
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: befe3ba9-e94c-43d9-823a-976d32650488
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:34 GMT
+Server: nginx
+X-Ms-Client-Request-Id: f4de8a73-a2ff-4dda-9b20-a58c73062cd2
+X-Ms-Request-Id: f4de8a73-a2ff-4dda-9b20-a58c73062cd2
+X-Ms-Run-Fn-Exec-Ms: 61.730
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: daee6019-b02d-4101-8c0d-749f3e1bb7fc
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:35 GMT
+Server: nginx
+X-Ms-Client-Request-Id: 9cb4e7d0-4664-4848-a99b-a7ed0a6cea6d
+X-Ms-Request-Id: 9cb4e7d0-4664-4848-a99b-a7ed0a6cea6d
+X-Ms-Run-Fn-Exec-Ms: 118.227
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: 9c8aa881-d79f-4ca6-a6ae-1fe63d89c42c
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:35 GMT
+Server: nginx
+X-Ms-Client-Request-Id: 565c2682-a827-4664-ab75-3ddb32e4e97d
+X-Ms-Request-Id: 565c2682-a827-4664-ab75-3ddb32e4e97d
+X-Ms-Run-Fn-Exec-Ms: 66.822
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: bbd111ee-f26c-4cdc-92ab-360f603c417e
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:35 GMT
+Server: nginx
+X-Ms-Client-Request-Id: 92f253cf-2315-4f6d-bdc0-79457a42b7a8
+X-Ms-Request-Id: 92f253cf-2315-4f6d-bdc0-79457a42b7a8
+X-Ms-Run-Fn-Exec-Ms: 78.686
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: 2337555b-6abc-4f8a-90f8-ecd5cf0dd198
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 25
+Content-Type: application/json
+Date: Mon, 03 Jul 2023 18:17:35 GMT
+Server: nginx
+X-Ms-Client-Request-Id: 543ae469-dac1-411c-b983-0acb70c1612a
+X-Ms-Request-Id: 543ae469-dac1-411c-b983-0acb70c1612a
+X-Ms-Run-Fn-Exec-Ms: 64.520
+X-Ms-Run-Function-Failed: False
+X-Ms-Server-Version: azmlinfsrv/0.8.4
+X-Request-Id: bf1429e5-f0fb-4167-9ea0-cce315548aab
+
+{"Results": ["no", "no"]}
+LOG: Response code = 200
+..done
+
+
+Server Software:        nginx
+Server Hostname:        acd3cbf4-6b46-498a-9f29-8f9a2aac79fb.westeurope.azurecontainer.io
+Server Port:            80
+
+Document Path:          /score
+Document Length:        25 bytes
+
+Concurrency Level:      1
+Time taken for tests:   1.158 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      4181 bytes
+Total body sent:        11150
+HTML transferred:       250 bytes
+Requests per second:    8.64 [#/sec] (mean)
+Time per request:       115.763 [ms] (mean)
+Time per request:       115.763 [ms] (mean, across all concurrent requests)
+Transfer rate:          3.53 [Kbytes/sec] received
+                        9.41 kb/s sent
+                        12.93 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    3   0.2      3       3
+Processing:    78  113  29.4    109     162
+Waiting:       77  113  29.5    109     161
+Total:         80  116  29.5    112     164
+
+Percentage of the requests served within a certain time (ms)
+  50%    112
+  66%    124
+  75%    142
+  80%    151
+  90%    164
+  95%    164
+  98%    164
+  99%    164
+ 100%    164 (longest request)
