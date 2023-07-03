@@ -1,0 +1,6 @@
+2023-07-03 12:17:00.022 - INFO - 9547 - azureml.automl.core.dataset_utilities._save_datasets_to_json:255 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2023-07-03 12:17:00.033 - INFO - 9547 - azureml.automl.core.dataset_utilities._save_datasets_to_json:255 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2023-07-03 12:17:00.034 - INFO - 9547 - azureml.train.automl._experiment_drivers.driver_utilities.validate_input:124 - Start data validation.
+2023-07-03 12:17:00.142 - INFO - 9547 - azureml.train.automl._experiment_drivers.driver_utilities.validate_input:137 - Validation service found the data has no errors.
+2023-07-03 12:41:04.165 - INFO - 9547 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping enabled: False
+2023-07-03 12:41:04.181 - INFO - 9547 - azureml.automl.runtime.featurization.data_transformer.__init__:191 - Feature sweeping timeout: 86400
