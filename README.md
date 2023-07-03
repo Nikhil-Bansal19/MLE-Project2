@@ -1,4 +1,4 @@
-<img width="935" alt="Screenshot 2023-07-04 at 1 30 35 AM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/1e3382cd-bcea-4b05-b323-f7e9d1d16811"># Operationalizing Machine Learning
+# Operationalizing Machine Learning
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
