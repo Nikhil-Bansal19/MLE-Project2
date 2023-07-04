@@ -308,6 +308,8 @@ response = requests.post(rest_endpoint,
 ```
 
 The experiment was visible on the _**Experiment**_ console in the `AML Studio`:
+![image](https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/ff67ee2a-720e-4e40-a655-81b112e5da62)
+
 
 <img width="1213" alt="Screenshot 2023-07-03 at 11 55 28 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/8c695565-4b70-4751-a4a9-b74c132c70bd">
 
