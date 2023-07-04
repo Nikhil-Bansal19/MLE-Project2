@@ -2,7 +2,7 @@
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
-In this project, we use AutoML to train a best model, then operationalize it by following the workflow below. Both the `Azure ML Studio` and `Python SDK` were used in this project.
+In this project, we use AutoML to train a best model, then operationalize it by following the workflow below. Both the `Azure ML Studio` and `Python SDK` were used in this project. This is a bank marketing campaign data. The various steps involved are explained below:
 
 This diagram provides a visual summary of the workflow:
 ![image](https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/caeb664a-7bcf-4845-98a4-72da9b9ab706)
@@ -29,7 +29,7 @@ This step used `az cli` interface to enable Application Insights and retrieve lo
 
 **5. Consume model endpoints**
 
-In this step, a provided script was run in the `az cli` interface to make a request to the deployed model endpoint and display the response received. The payload data used for testing the endpoint was also saved to a json file named `data.json` for use in conducting a benchmarking test on the endpoint.
+In this step, a provided script was run in the `az cli` interface to make a request to the deployed model endpoint and display the response received. The payload data used for testing the endpoint was also saved to a json file named `data.json` for use in conducting a benchmarking test on the REST endpoint.
 
 **6. Create and publish a pipeline**
 
@@ -324,7 +324,7 @@ The _**Training Pipeline Automation**_ process was successfully implemented usin
 
 ## Screen Recording
 
-A screencast demonstraing the entire process of the working ML application, including interactions with the deployed model and published pipeline endpoints is available here:
+A screencast demonstraing the entire process of the working ML application, including interactions with the deployed model and published pipeline endpoints is available separately in this zip with name "udacity-project2-video.mp4". Please see it from there. I don't have a youtube channel to post such stuff.
 
 
 ## Future Improvements
