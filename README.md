@@ -165,6 +165,10 @@ Clicking the `VotingEnsemble` hyperlink revealed details of the best model:
 
 <img width="606" alt="Screenshot 2023-07-03 at 6 18 18 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/da72514a-a2c9-4120-a886-4d735059001f">
 
+Here is the screenshot of the pipeline with auto_ml module listed as ml-experiment-1 showing that it got completed
+![image](https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/435c9515-3d3f-4c68-9d4a-ac52ecc8fac9)
+
+
 **6. Conclusion**
 
 The _**AutoML Model Training**_ process was successfully executed with a best model ready for deployment.
