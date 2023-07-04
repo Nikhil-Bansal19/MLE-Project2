@@ -298,6 +298,10 @@ The pipeline endpoint was viewable from the _**Pipelines**_ console by clicking 
 
 <img width="1217" alt="Screenshot 2023-07-03 at 11 57 15 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/7a66a44d-05b3-46e2-b888-8c5b1f45bb00">
 
+In the Jobs section i can see, it got completed successfully:
+<img width="1183" alt="image" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/0a6d9b9c-028b-450f-842c-eb50d564f9f7">
+
+
 **2. Post a request to the endpoint to start a run**
 
 The next step was to send a `POST` request to the endpoint with an Experiment object named `pipeline-rest-endpoint` to trigger the pipeline run:
