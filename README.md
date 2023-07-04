@@ -78,6 +78,8 @@ This image shows the dataset was uploaded and registered successfully for use by
 <img width="1217" alt="Screenshot 2023-07-03 at 5 32 29 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/88d487cf-2ca0-4a17-936c-a51d949eb275">
 <img width="1199" alt="Screenshot 2023-07-03 at 5 33 07 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/26c30b4e-6a0c-422a-affb-6f99dd435ffb">
 
+Thisimage shows auto ml job run completion:
+<img width="1203" alt="Screenshot 2023-07-03 at 6 03 21 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/c478116b-d220-4982-9518-91cff3b602d4">
 
 **2. AutoML Config**
 
@@ -151,9 +153,6 @@ The pipeline run successfully completed as shown in the series of screenshots pr
 The was also displayed inside the notebook like so:
 
 <img width="1074" alt="Screenshot 2023-07-03 at 6 04 07 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/38025006-8cc2-482d-9453-680f9c9715f3">
-
-<img width="1203" alt="Screenshot 2023-07-03 at 6 03 21 PM" src="https://github.com/Nikhil-Bansal19/MLE-Project2/assets/47290347/c478116b-d220-4982-9518-91cff3b602d4">
-
 
 
 The run produced a list of top performing models in descending order of _**AUC weighted accuracy**_. The best model topping the list is the one named `VotingEnsemble`:
